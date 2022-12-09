@@ -94,3 +94,4 @@ _________________
 - To include quotes inside of your string, write in the following format let quote = "Then he tapped a sign saying \"Believe\" and walked away."
 - when writing long numbers in swift it is in convention to break apart using underscores which swift will ignore when reading
 - swift allows writing compand assignment operators such as: count += 2
+- swift is a bit awkward when it comes to storing decimals (called doubles), in most cases type conversion is necessary.
