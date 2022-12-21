@@ -98,3 +98,25 @@ archEnemies["Batman"] = "The Joker"
 archEnemies["Superman"] = "Lex Luthor"
 
 archEnemies["Batman"] = "Penguin"
+
+# How to use sets for fast data lookup
+Sets do not store order and may not contain duplicates
+let people = Set(["Denzel Washington", "Tom Cruise", "Nicolas Cage", "Samuel L Jackson"])
+
+and then print(people)
+you could get denzel, tom sam, nick
+or nick, denzel, tom, sam
+or anyother combination every single time you run the code.
+instead of thinking of sets as a line of data, its best to think of it as a bag.
+there is no guarentee that everytime you pull out a name youll pull it all out in order
+
+The second important difference when adding items to a set is visible when you add items individually. Here’s the code:
+
+var people = Set<String>()
+people.insert("Denzel Washington")
+people.insert("Tom Cruise")
+people.insert("Nicolas Cage")
+people.insert("Samuel L Jackson")
+Notice how we’re using insert()? When we had an array of strings, we added items by calling append(), but that name doesn’t make sense here – we aren’t adding an item to the end of the set, because the set will store the items in whatever order it wants.
+
+sets specialize in FAST LOOKUP
