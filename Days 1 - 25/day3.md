@@ -120,3 +120,30 @@ people.insert("Samuel L Jackson")
 Notice how we’re using insert()? When we had an array of strings, we added items by calling append(), but that name doesn’t make sense here – we aren’t adding an item to the end of the set, because the set will store the items in whatever order it wants.
 
 sets specialize in FAST LOOKUP
+
+# how to create and use enums
+
+enums are basically like a drop down list of values.
+enum Weekday {
+  case monday
+  case tuesday
+  case wed
+  case thru
+  case fri
+}
+var day = Weekday.monday
+
+you can only call Weekday.(something in the case list)
+so you cant call Weekday.Sunday as that is not on the weeklist
+
+you can shorten to this
+
+enum Weekday {
+  case monday, tuesday, wednesday, thursday, friday
+}
+var day = Weekday.monday
+day = .tuesday
+day = .friday
+// day is initalized as a weekday so you dont need to write Weekday anymore.
+
+theyre faster for swift to work with and free of human error ffrom us typing the code a billion times
