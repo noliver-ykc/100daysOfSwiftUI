@@ -51,3 +51,11 @@ print(username)
 Important: Although type annotation can let us override Swift’s type inference to a degree, our finished code must still be possible. For example, this is not allowed:
 
 let score: Int = "Zero"
+
+# Summary: Complex data
+- Arrays store many values, and read them using indices
+- Dictionaries store many values and read them with kkeys
+- Sets store many unique values, but we dont choose their order
+- Enums create our own data types to specifiy acceptable values
+- Type inference is used by siwft to figure what data we are storing
+- Annotations set up a specific data type for empty declarations
