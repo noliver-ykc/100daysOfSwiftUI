@@ -131,3 +131,24 @@ default:
     print("A partridge in a pear tree")
 }
 That will match the first case and print “5 golden rings”, but the fallthrough line means case 4 will execute and print “4 calling birds”, which in turn uses fallthrough again so that “3 French hens” is printed, and so on. It’s not a perfect match to the song, but at least you can see the functionality in action!
+
+# Ternary Operator
+
+let age = 18
+let canVote = age >= 18 ? "Yes" : "No"
+
+It gets a little hard to read when your condition use == to check for equality, as you can see here:
+
+enum Theme {
+    case light, dark
+}
+
+let theme = Theme.dark
+
+let background = theme == .dark ? "black" : "white"
+print(background)
+The = theme == part is usually the bit folks find hard to read, but remember to break it down:
+
+What? theme == .dark
+True: “black”
+False: “white”
