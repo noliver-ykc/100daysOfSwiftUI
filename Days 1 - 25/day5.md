@@ -41,3 +41,32 @@ Swift adds a second piece of functionality to all its strings, arrays, dictionar
 if username.isEmpty == true {
     username = "Anonymous"
 }
+
+# How to check multiple conditions
+
+let a = false
+let b = true
+
+if a {
+    print("Code to run if a is true")
+} else if b {
+    print("Code to run if a is false but b is true")
+} else {
+    print("Code to run if both a and b are false")
+}
+
+## enums case 
+enum TransportOption {
+    case airplane, helicopter, bicycle, car, scooter
+}
+
+let transport = TransportOption.airplane
+
+if transport == .airplane || transport == .helicopter {
+    print("Let's fly!")
+} else if transport == .bicycle {
+    print("I hope there's a bike path…")
+} else if transport == .car {
+    print("Time to get stuck in traffic.")
+} else {
+    print("I'm going to hire a scooter now!")
